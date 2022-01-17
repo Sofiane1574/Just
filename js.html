@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script&family=Island+Moments&family=Neonderthaw&family=Permanent+Marker&family=Roboto+Mono:wght@200&family=Rubik+Beastly&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+<head>
+	<title>html</title>
+	<script type="text/javascript">
+		function f(){
+			var text=document.getElementById("i").value;
+			console.log(text);
+			var x=document.getElementsByClassName("h");
+			for (var k = 0 ; k <= x.length-1; k++) {
+				    x[k].innerText=text;
+			}
+		}
+
+	</script>
+   <style type="text/css">
+		.h {
+			font-size:1.5em;
+			/*border: 2px double black;*/
+			border-width: 9px;
+			border-style: dashed dotted;
+			border-radius: 10px;
+			font-weight: bolder;
+			margin: 0 200px 0;
+		}
+	</style>
+</head>
+<body style="background-color: aqua;">
+	<section style="text-align: center;font-size: 2em;">
+		<span>
+			<input type="text" value="Write something ..." style="font-size:1.4em;margin: 30px 0 30px;background-color: lightgreen; " id="i">
+			<button style="font-size:1.4em;background-color:lightblue;" onclick="f();">Click here</button>
+	    </span>
+	    <span style="font-family: 'Moo Lah Lah', cursive;writing-mode: vertical-lr;float: left;">Made by 0X626 </span>
+		<div class="h" style="font-family: 'Neonderthaw', cursive;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'Rubik Beastly', cursive;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'Roboto Mono', monospace;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'The Nautigal', cursive;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'Dancing Script', cursive;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'Island Moments', cursive;">Write something Bro...</div><br>
+		<div class="h" style="font-family: 'Bangers', cursive;">Write something Bro...</div><br>
+
+		
+	</section>
+
+
+</body>
+</html> 
