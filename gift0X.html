@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>myGift 0X626</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.bing{border:4px dotted black;border-radius: 10px;}
+		.in1{background-color: yellow;font-size: 1.5em;animation:f2yellow 10s;margin:7vh 1vw 2vh 10vw;}
+		.btn1{background-color: yellow;font-size: 1.5em;animation:f2yellow 10s;margin-left:7vh 0 0 5vw;border-radius: 10px;}
+		.divvy{text-align: center;font-size: 1.5em;font-family: 'Pacifico', cursive;}
+		#body0{margin: 0;animation:body_A 5s infinite;background-color: aqua;}
+		#footer0{font-family: "Sofia", sans-serif;text-align: center;font-size: 2.5em;c, cursive;display: block;border:9px solid black;border-radius: 50px;margin: 10px 20vw;animation:body1 3s ;background-color: aqua;}
+		#footer0:hover{background-color:black;color:aqua;border-color: aqua;}
+		#main{margin: 3vh 3vw;border:9px solid black;animation:body1 7s ;border-radius: 20px;background-color: aqua;overflow: hidden;}
+		#elmnt0{display: none;} 
+		#elmnt2{display: none;}
+		#elmnt3{display: none;}
+		#elmnt1{display: none;text-align: center;font-size: 1.5em;font-family: 'Lobster';}  
+		#_0X {text-align: center;font-size: 1.5em;font-family: 'Lobster';margin:2vh 1vw;}
+		#hided0X{color:red;text-align: center;display: none;font-size: 1.4em;}
+		.piano0 {text-align: center;font-size: 1.5em;font-family: 'Pacifico', cursive;}
+		#piano1 {text-align: center;font-size: 1.5em;font-size: 1.8em;font-weight: bolder;text-shadow: 0px 0px 5px pink;font-family: "Sofia", sans-serif;}
+		#net{font-family: 'Caveat', cursive;animation: gift 6s infinite;font-size: 3em;color:magenta;text-shadow:0px 0px 8px black;display:none;}
+		@keyframes gift{
+        0%{color: magenta;font-size: 3em;}	
+	    15%{color:deeppink;font-size: 10em;transform:rotate(30deg);}
+	    30%{color:deeppink;font-size: 4.5em;transform:rotate(-30deg);}
+	    55%{color:red;font-size: 11em;transform:rotate(180deg);}
+	    70%{color:red;font-size:2em;transform:rotate(-180deg);}
+	    85%{color:deeppink;font-size: 12em;transform:rotate(360deg);}
+	    100%{{color:magenta;font-size: 3em;}}
+	    }
+		@keyframes body_A{
+        0%{background-color: magenta;}	
+		20%{background-color:deeppink;}
+		40%{background-color:crimson;}
+		60%{background-color:indigo;}
+		80%{background-color:green;}
+		100%{background-color:fuchsia;}
+	    }
+		@keyframes body1{
+        from{background-color: black;}	
+		to{background-color:aqua;}}
+			@keyframes f2yellow{
+        from{background-color: black;}	
+		to{background-color:yellow;}}
+	</style>
+</head>
+<body id="body0">
+	<footer id="footer0"><i class="fa fa-home"></i> How Are you ?<i class="fa fa-home"></i></footer>
+	<main id="main">
+		<div>  <!-- FIEST DIV-->
+		   <input type="text" id="nom" class="in1" placeholder="write your name"><button onclick="f();" class="btn1">Click here</button>
+		   <div id="_0X">**************</div> <p id="hided0X">please write your real name</p>
+		   <br>
+	    </div>
+	     <!--------------------------------------------------- 2ND DIV----------------------------------------->
+		<div id="elmnt0"> 
+			<hr class="bing">
+			<div class="divvy">Do you want to know something ?</div>
+		    <input type="text" id="nom2" class="in1" placeholder="YES/NO" style="text-align: center;"><button onclick="g();" class="btn1">Click here</button>
+	   <p id="elmnt1">
+	   	__________&nbsp;___________
+	   </p>
+	   	<!------------------------------3th DIV--------------------------------------------------->
+	   	<div id="elmnt2"> 
+	   	<hr class="bing">
+	   	    <div class="divvy" >Do you want to know something else ? </div>
+		    <input type="text" id="nom3" class="in1" placeholder="YES/NO" style="text-align: center;"><button onclick="h();" class="btn1">Click here</button>
+	   	</div>
+	   		<p id="fail">&nbsp;</p>
+	   	<div id="elmnt3">
+	   		<p class="piano0">I think you are a nice girl , (who ate a lot of "danino" but it's just a joke ) , <br>i do respect you<br> &<p id="piano1"> i was thinking about that thing !</p> </p><br>
+	   		<section style="text-align: center;margin:2vh 2vw;">
+	   		<button class="btn1" onclick="r();">Just Click here to see something!</button>
+	   		<div id="net">Douae</div>
+	   		<br>
+	   		<div style="margin:0 0 400px 0;">&nbsp;</div>
+	   		</section>
+	   	</div>
+	</main>
+
+
+</body>
+<script type="text/javascript">
+	function r() {
+		document.getElementById("net").style.display="block"
+	}
+	//----------------------------------------------------------------------
+	function h(){
+	    var z=document.getElementById("nom3").value;
+		if((z.charAt(0)=="y"||z.charAt(0)=="Y")&&(z.charAt(1)=="e" || z.charAt(1)=="E")&&(z.charAt(2)=="s" || z.charAt(2)=="S")&& (z.length==3))
+		{  //-------------------IF YES
+                document.getElementById("elmnt3").style.display="block";
+                document.getElementById("fail").style.display="none"; 
+		}   //-----------------IF NO
+		else if((z.charAt(0)=="n"||z.charAt(0)=="N") && (z.charAt(1)=="o" || z.charAt(1)=="O") && (z.length==2)){
+		   var w="Allright no problem ! see you later ! ";
+		    document.getElementById("elmnt3").style.display="none";
+			document.getElementById("fail").innerText=w;
+			document.getElementById("fail").style.display="block"; 
+			}
+		else{
+			var w="Invalid choice !";
+			document.getElementById("elmnt3").style.display="none";
+            document.getElementById("fail").innerText=w;
+            document.getElementById("fail").style.display="block";
+		}       
+	    }
+	//----------------------------------------------------------------------
+	function g(){
+	    var z=document.getElementById("nom2").value;
+		if((z.charAt(0)=="y"||z.charAt(0)=="Y")&&(z.charAt(1)=="e" || z.charAt(1)=="E")&&(z.charAt(2)=="s" || z.charAt(2)=="S")&& (z.length==3))
+		{
+			var w="You are wonderful !";
+            document.getElementById("elmnt2").style.display="block";
+		}
+		else if((z.charAt(0)=="n"||z.charAt(0)=="N") && (z.charAt(1)=="o" || z.charAt(1)=="O") && (z.length==2)){
+		    var w="Allright ... thanks for ur time !";document.getElementById("elmnt2").style.display="none";
+			}
+		else{
+			var w="Invalid choice !";document.getElementById("elmnt2").style.display="none";
+		}       
+                document.getElementById("elmnt1").innerText=w;
+                document.getElementById("elmnt1").style.display="block";
+	    }
+	    //-----------------------------------------------------------------------
+	var k=0;
+	function f(){
+		var x=document.getElementById("nom").value;
+		if((x.charAt(0)=="d"||x.charAt(0)=="D") && (x.charAt(1)=="o" || x.charAt(1)=="O") && (x.charAt(2)=="u" || x.charAt(2)=="U")){
+			var y="Hello & Welcome , this is my little-simple gift for you , i hope that you enjoy it !";document.getElementById("elmnt0").style.display="block";document.getElementById("hided0X").style.display="none";
+		    }
+		else
+			{var y=" Something went wrong ...";k=k+1;if(k>=2){document.getElementById("hided0X").style.display="block";}}
+			document.getElementById("_0X").innerHTML=y;
+		    }
+</script>
+</html>
